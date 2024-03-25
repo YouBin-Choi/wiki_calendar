@@ -21,13 +21,7 @@
         }
         let save = btoa(JSON.stringify([123, 456]));
         window.history.pushState({}, null, '?data=' + save);
-    </script>
-</header>
-<body>
-<div id="calendar" style="height: 600px;">
-</div>
-<script>
-    const Calendar = tui.Calendar;
+         const Calendar = tui.Calendar;
     const container = document.getElementById('calendar');
     const options = {
         defaultView: 'month',
@@ -60,6 +54,13 @@
     for (const param of searchParams) {
         console.log('--' + param);
     }
+    </script>
+</header>
+<body>
+<div id="calendar" style="height: 600px;">
+</div>
+<script>
+   
 </script>
 </body>
 </html>
